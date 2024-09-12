@@ -1,0 +1,102 @@
+*, *::before, *::after {
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.nav-link {
+    position: relative;
+    text-decoration: none; /* Supprimer le soulignement par défaut */
+    overflow: hidden;
+  }
+
+  .element_nav {
+    font-size: 20px;
+  }
+
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px; /* Hauteur du soulignement */
+    background-color: #fff; /* Couleur du soulignement */
+    width: 0;
+    transition: width 0.3s ease; /* Durée et effet de la transition */
+  }
+
+
+
+  .nav-link:hover::after {
+    width: 100%;
+  }
+
+  .nav-link strong {
+    position: relative;
+    z-index: 1;
+  }
+.hover-effect {
+    transition: box-shadow 0.3s ease;
+}
+
+.hover-effect:hover {
+   
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2); /* Ombre portée lors du survol */
+}
+
+/* a{
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #27ea68;
+} */
+
+.custom-link{
+    color: white; /* Couleur initiale */
+    transition: color 0.5s ease;
+}
+
+.custom-link:hover {
+    color: #27ea68;
+}
+
+
+.image{
+    background: url("asset/fond.jpg") center center no-repeat;
+    background-size: cover;
+    height: 750px;
+    width: 100%;
+
+}
+
+.text{
+    height: 250px;
+    width: 100%;
+    opacity: 80%;
+
+}
+
+
+
+.boutton_my_orienty{
+    border-radius: 20px;
+
+}
+
+.footer_link {
+    font-size: 20px;
+    display: flex;
+}
+.avenir{
+    color: green;
+}
+
+
+
+
+
+
+
+
+
